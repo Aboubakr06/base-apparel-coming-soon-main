@@ -18,10 +18,12 @@ function checkEmail() {
         ErrorEl.style.display = "block";
         ErrorMsg.style.display = "block";
         ValidMsg.style.display = "none";
+        
     } else {
         EmailCont.style.border = "1px solid var(--clr-primary-300)";
         ErrorEl.style.display = "none";
         ErrorMsg.style.display = "none";
         ValidMsg.style.display = "block";
+        EmailInp.value = "";
     }
 }
